@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payroll Management System</title>
+<style>
+body {
+font-family: Arial;
+background: linear-gradient(to right, #4facfe, #00f2fe);
+text-align: center;
+color: white;
+}
+.container {
+background: white;
+color: black;
+width: 350px;
+margin: 50px auto;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 10px gray;
+}
+input, button {
+width: 90%;
+padding: 10px;
+margin: 5px;
+border-radius: 5px;
+border: 1px solid gray;
+}
+button {
+background: #4facfe;
+color: white;
+border: none;
+cursor: pointer;
+}
+button:hover {
+background: #0077ff;
+}
+h2 {
+margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<h1>Payroll Management System</h1>
+<div class="container">
+<h2>Employee Salary Calculator</h2>
+<input type="text" id="name" placeholder="Employee Name">
+<input type="number" id="basic" placeholder="Basic Salary">
+<input type="number" id="allowance" placeholder="Allowance">
+<input type="number" id="deduction" placeholder="Deduction">
+<button onclick="calculateSalary()">Calculate Salary</button>
+<h3 id="result"></h3>
+</div>
+<script>
+function calculateSalary() {
+let name = document.getElementById("name").value;
+let basic = parseInt(document.getElementById("basic").value) || 0;
+let allowance = parseInt(document.getElementById("allowance").value) || 0;
+let deduction = parseInt(document.getElementById("deduction").value) || 0;
+let total = basic + allowance - deduction;
+document.getElementById("result").innerHTML =
+"Employee: " + name + "<br>Total Salary: ₹" + total;
+}
+</script>
+</body>
+</html>
