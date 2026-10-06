@@ -1,0 +1,312 @@
+/* ================================================= */
+/* TABLET / SMALL LAPTOP */
+/* ================================================= */
+
+@media screen and (max-width: 992px) {
+
+    /* ============================= */
+    /* NAVBAR */
+    /* ============================= */
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    #searchInput {
+        width: 250px;
+        max-width: 40%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+    /* ============================= */
+    /* MOVIES PAGE */
+    /* ============================= */
+
+    .movie-card1,
+    .movie-card2,
+    .movie-card3,
+    .movie-card4 {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .details {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .book {
+        margin-top: 20px;
+    }
+
+
+    /* ============================= */
+    /* LOGIN */
+    /* ============================= */
+
+    .container {
+        width: 90%;
+        max-width: 400px;
+    }
+
+
+    /* ============================= */
+    /* HERO */
+    /* ============================= */
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+
+/* ================================================= */
+/* MOBILE */
+/* ================================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* ============================= */
+    /* FIXED HEADER */
+    /* ============================= */
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    body {
+        padding-top: 145px;
+    }
+
+
+    /* ============================= */
+    /* MOBILE NAVBAR */
+    /* ============================= */
+
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    nav h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 27px;
+        margin: 0;
+    }
+
+    #searchInput {
+        width: 100%;
+        max-width: 250px;
+        padding: 8px;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+
+    /* ============================= */
+    /* HERO */
+    /* ============================= */
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    /* ============================= */
+    /* ABOUT SECTIONS */
+    /* ============================= */
+
+    .mission,
+    .why {
+        width: 95%;
+    }
+
+    .why li {
+        font-size: 16px;
+    }
+
+
+    /* ============================= */
+    /* TRAILER CARDS */
+    /* ============================= */
+
+    .movies-container {
+        background: transparent;
+        margin: 20px 15px;
+        gap: 20px;
+    }
+
+    .movie-card {
+        flex-basis: 100%;
+        max-width: 350px;
+    }
+
+    .movie-card img {
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+
+    /* ============================= */
+    /* MOVIES PAGE */
+    /* ============================= */
+
+    .movie-card1,
+    .movie-card2,
+    .movie-card3,
+    .movie-card4 {
+        width: 95%;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* CENTER POSTER */
+
+    .poster {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .poster img {
+        display: block;
+        width: 120px;
+        height: 180px;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+
+    /* MOVIE DETAILS */
+
+    .details {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .details h2 {
+        font-size: 22px;
+    }
+
+    .details p {
+        font-size: 15px;
+    }
+
+
+    /* BUTTONS */
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .buttons button,
+    .book button {
+        width: 100%;
+    }
+
+
+    /* ============================= */
+    /* LOGIN PAGE */
+    /* ============================= */
+
+    .container {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+
+        width: 90%;
+        max-width: 400px;
+
+        margin: 30px auto 60px;
+        padding: 22px;
+    }
+
+    .login-page h1 {
+        font-size: 35px;
+        margin-bottom: 12px;
+    }
+
+    .container input {
+        padding: 10px;
+        margin: 7px 0;
+    }
+
+    .login-btn,
+    .google-btn {
+        padding: 10px;
+    }
+
+    .divide {
+        margin: 13px 0;
+    }
+
+
+    /* ============================= */
+    /* FOOTER */
+    /* ============================= */
+
+    footer {
+        position: relative;
+        width: 100%;
+        margin-top: auto;
+        padding: 20px;
+    }
+}
